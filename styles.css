@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: last baseline;
+  background: wheat;
+  flex-direction: column;
+  background-color: #cc5577;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23ce5776' x='10' width='11' height='11'/%3E%3Crect fill='%23d05a76' y='10' width='11' height='11'/%3E%3Crect fill='%23d15c75' x='20' width='11' height='11'/%3E%3Crect fill='%23d35f74' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d46174' y='20' width='11' height='11'/%3E%3Crect fill='%23d66473' x='30' width='11' height='11'/%3E%3Crect fill='%23d76673' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d96972' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23da6c72' y='30' width='11' height='11'/%3E%3Crect fill='%23db6e71' x='40' width='11' height='11'/%3E%3Crect fill='%23dc7171' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23dd7471' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23de7671' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23df7971' y='40' width='11' height='11'/%3E%3Crect fill='%23e07c71' x='50' width='11' height='11'/%3E%3Crect fill='%23e17e71' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e28171' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e38471' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e38771' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e48972' y='50' width='11' height='11'/%3E%3Crect fill='%23e58c72' x='60' width='11' height='11'/%3E%3Crect fill='%23e58f73' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e69173' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e69474' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23e79775' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23e79a75' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23e89c76' x='70' width='11' height='11'/%3E%3Crect fill='%23e89f77' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23e8a278' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23e9a47a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23e9a77b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e9aa7c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e9ac7e' x='80' width='11' height='11'/%3E%3Crect fill='%23eaaf7f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23eab281' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23eab482' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23eab784' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23eaba86' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ebbc88' x='90' width='11' height='11'/%3E%3Crect fill='%23ebbf8a' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23ebc18c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ebc48e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23ebc790' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ebc992' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ebcc94' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ebce97' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ebd199' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ecd39c' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ecd69e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23ecd8a1' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23ecdba4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ecdda6' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ece0a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ede2ac' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ede4af' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ede7b2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ede9b5' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23eeecb8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.keyboard {
+  width: 26rem;
+  height: 180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  background: #272b2c;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.input-box{
+  width: 90vw;
+  height: 50vh;
+  margin: 5vh auto;
+  background: rgb(211, 205, 194);
+  /* padding: 0.5rem; */
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+#ta{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1vh;
+  border-radius: 10px;
+  resize: none;
+  outline: 0;
+  border: 0;
+  }
+.layerOne,
+.layerTwo,
+.layerThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.5rem;
+}
+.layerFour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-one {
+  width: 3.5rem;
+}
+.footer-two {
+  width: 2.1rem;
+}
+.footer-three {
+  width: 9rem;
+}
+.footer-four {
+  width: 5rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  padding-bottom: 0.25rem;
+  background: #2f3336;
+  color: #71d4fe;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+.buttons-action {
+  width: 2.5rem;
+  height: 2.1rem;
+}
+.footer {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  color: #71d4fe;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+  background: #2f3336;
+}
+.buttons:active,
+.footer:active {
+  transform: scale(0.9);
+}
+.buttons:hover,
+.footer:hover {
+  cursor: pointer;
+}
+
+
+/* color palatte style */
+i{
+  box-shadow: 0 4px 8px rgba(78, 70, 70, 0.8); /* Adjust the shadow color and intensity as needed */
+  border-radius:100%;
+}
+.palette-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  display:none ;
+} 
+.palatte{
+  position: relative;
+  font-size: 5rem;
+  /* margin: 0 auto; */
+}
+.colors{
+  position: absolute;
+  height: 14%;
+  width: 15%;
+  border: 1px solid wheat;
+  border-radius: 50%;
+  background-color: wheat;
+}
+.colors:hover{
+  cursor: pointer;
+}
+.color-one{
+  background-color: yellow;
+  top: 22%;
+  left: 43%;
+  border: 0;
+}
+.color-two{
+  background-color:skyblue;
+  left: 12%;
+  top: 51%;
+  border: 0;
+}
+.color-three{
+  background-color: Purple;
+  left: 18%;
+  top: 31%;
+  border: 0;
+  border: 0;
+}
+.color-four{
+  background-color: magenta;
+  right: 17%;
+  top: 31%;
+  border: 0;
+}
+
+/* for small screens  */
+@media screen and (max-width: 500px) {
+
+  .keyboard {
+    width: 95vw;
+    height: 25vh; /* 180px * (300px / 400px) */
+    padding: 0.375rem; /* 0.5rem * (300px / 400px) */
+    border-radius: 7.5px; /* 10px * (300px / 400px) */
+  }
+  .input-box{
+  width: 90vw;
+  height: 50vh;
+  margin: 5vh auto;
+  background: rgb(211, 205, 194);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+#ta{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 2vh;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  border: 0;
+
+  }
+  .layerOne,
+  .layerTwo,
+  .layerThree {
+    grid-gap: 1.5vw; /* 0.5rem * (300px / 400px) */
+  }
+
+  .buttons,
+  .footer {
+    height: 4vh; /* 2rem * (300px / 400px) */
+    width: 7.45vw; /* 2rem * (300px / 400px) */
+    border-radius: 0.45rem; /* 0.5rem * (300px / 400px) */
+    grid-gap: 1.5vw;
+  }
+
+  .buttons-action {
+    width: 11vw; /* 2.5rem * (300px / 400px) */
+    height: 4.5vh; /* 2.1rem * (300px / 400px) */
+  }
+
+  .footer-one {
+    width: 12vw; /* 3.5rem * (300px / 400px) */
+
+  }
+
+  .footer-two {
+    width: 8vw; /* 2.1rem * (300px / 400px) */
+  }
+  .footer-three {
+    width: 36vw;
+  }
+
+  .footer-four {
+    width: 19vw; /* 5rem * (300px / 400px) */
+  }
+}
