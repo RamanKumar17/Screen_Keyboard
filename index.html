@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Keypad</title>
+    <script
+      src="https://kit.fontawesome.com/89b4466aff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="input-box">
+      <textarea
+        name=""
+        id="ta"
+        cols="30"
+        rows="10"
+        placeholder="Please type here..."
+        class="txt"
+      ></textarea>
+    </div>
+    <div class="keyboard">
+      <div class="layerOne">
+        <div class="buttons" onclick="append(this)">q</div>
+        <div class="buttons" onclick="append(this)">w</div>
+        <div class="buttons" onclick="append(this)">e</div>
+        <div class="buttons" onclick="append(this)">r</div>
+        <div class="buttons" onclick="append(this)">t</div>
+        <div class="buttons" onclick="append(this)">y</div>
+        <div class="buttons" onclick="append(this)">u</div>
+        <div class="buttons" onclick="append(this)">i</div>
+        <div class="buttons" onclick="append(this)">o</div>
+        <div class="buttons" onclick="append(this)">p</div>
+      </div>
+      <div class="layerTwo">
+        <div class="buttons" onclick="append(this)">a</div>
+        <div class="buttons" onclick="append(this)">s</div>
+        <div class="buttons" onclick="append(this)">d</div>
+        <div class="buttons" onclick="append(this)">f</div>
+        <div class="buttons" onclick="append(this)">g</div>
+        <div class="buttons" onclick="append(this)">h</div>
+        <div class="buttons" onclick="append(this)">j</div>
+        <div class="buttons" onclick="append(this)">k</div>
+        <div class="buttons" onclick="append(this)">l</div>
+      </div>
+      <div class="layerThree">
+        <div class="buttons buttons-action" onclick="textUpperCase()">
+          <i class="fa-solid fa-circle-up"></i>
+        </div>
+        <div class="buttons" onclick="append(this)">z</div>
+        <div class="buttons" onclick="append(this)">x</div>
+        <div class="buttons" onclick="append(this)">c</div>
+        <div class="buttons" onclick="append(this)">v</div>
+        <div class="buttons" onclick="append(this)">b</div>
+        <div class="buttons" onclick="append(this)">n</div>
+        <div class="buttons" onclick="append(this)">m</div>
+        <div class="buttons buttons-action" onclick="remove()">
+          <i class="fa-solid fa-delete-left"></i>
+        </div>
+      </div>
+      <div class="layerFour">
+        <div class="footer footer-one">123</div>
+        <div class="footer footer-two">
+          <i class="fa-solid fa-face-laugh"></i>
+        </div>
+        <div class="footer footer-two" onclick="showPalatte()">
+          <i class="fa-solid fa-palette"></i>
+        </div>
+        <div class="footer footer-three" onclick="addSpace()">Space</div>
+        <div class="footer footer-four" onclick="hitEnter()">Enter</div>
+      </div>
+    </div>
+    <div class="palette-container">
+      <div class="palatte">
+        <i class="fa-solid fa-palette"></i>
+        <div class="colors color-one" onclick="colorYellow()"></div>
+        <div class="colors color-two" onclick="colorSkyblue()"></div>
+        <div class="colors color-three" onclick="colorPurple()"></div>
+        <div class="colors color-four" onclick="colorMagenta()"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
